@@ -57,16 +57,16 @@ public class GiteaProvider extends DefaultProvider {
         String oauthAccessTokenToUse = pluginSettings.getOauthToken();
 
         if (StringUtils.isEmpty(endPointToUse)) {
-            endPointToUse = System.getProperty("go.plugin.build.status.github.endpoint");
+            endPointToUse = System.getProperty("go.plugin.build.status.gitea.endpoint");
         }
         if (StringUtils.isEmpty(usernameToUse)) {
-            usernameToUse = System.getProperty("go.plugin.build.status.github.username");
+            usernameToUse = System.getProperty("go.plugin.build.status.gitea.username");
         }
         if (StringUtils.isEmpty(passwordToUse)) {
-            passwordToUse = System.getProperty("go.plugin.build.status.github.password");
+            passwordToUse = System.getProperty("go.plugin.build.status.gitea.password");
         }
         if (StringUtils.isEmpty(oauthAccessTokenToUse)) {
-            oauthAccessTokenToUse = System.getProperty("go.plugin.build.status.github.oauth");
+            oauthAccessTokenToUse = System.getProperty("go.plugin.build.status.gitea.oauth");
         }
 
         updateCommitStatus(revision, pipelineStage, trackbackURL, repository, state, usernameToUse, passwordToUse, oauthAccessTokenToUse, endPointToUse);

@@ -29,7 +29,7 @@ import java.util.Map;
 
 public class GitHubProvider extends DefaultProvider {
     public static final String PLUGIN_ID = "github.pr.status";
-    public static final String GITHUB_PR_POLLER_PLUGIN_ID = "github.pr";
+    public static final String GITHUB_PR_POLLER_PLUGIN_ID = "plugin-github.pr";
 
     public GitHubProvider() {
         super(new DefaultPluginConfigurationView());
